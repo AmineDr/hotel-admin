@@ -1,0 +1,54 @@
+.sidebar-dark .nav-item .nav-link span {
+    font-size: 20px !important  ;
+}
+.sidebar-dark .nav-item .nav-link i {
+    font-size: 20px !important  ;
+}
+
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+}
+
+.preloader-wrapper {
+    height: 100vh !important;
+}
+
+.preloader-wrapper.page {
+    height: 90vh !important;
+}
+
+.card-header h2 {
+    margin-top: 6px;
+}
+
+.card-body {
+    background-color: rgb(245, 245, 245);
+}
+
+.table-header-sort {
+    font-family: 'Nunito';
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.table-header-sort:hover {
+    background-color: rgba(211, 211, 211, 0.35);
+    transition: all 0.5s ease;
+}
+
+.btn-custom {
+    border-radius: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
