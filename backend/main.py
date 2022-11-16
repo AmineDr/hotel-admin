@@ -73,9 +73,10 @@ def get_last_n_days(date, n):
 
 @app.route('/api/stats')
 def get_stats():
-    sid = request.args.get('SID-ROOT')
+    sid = session.get('SID-ROOT')
     admin = Admin.query.filter_by(ID=sid).first()
-    if not admin or admin.privileges < 1:
+    print(sid)
+    if not admin or int(admin.privileges) < 1:
         return {"status": "Forbidden"}, 403
 
     query_month = Reservation.date_reserved_from > get_last_n_days(datetime.utcnow(), 30)
